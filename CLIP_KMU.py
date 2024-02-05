@@ -90,7 +90,7 @@ class EarlyStopping:
             self.counter = 0
 
 # Data
-file_path = 'simpledes04.csv'
+file_path = 'des5data5.csv'
 print('==> Preparing data..')
 print(use_cuda)
 transforms_vaild = torchvision.transforms.Compose([
