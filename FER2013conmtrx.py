@@ -108,10 +108,7 @@ if opt.model == 'Ourmodel':
    dim = 0.5
    clip_model = clip_model.float()
    clip_model.eval()
-   feature_dim = clip_model.visual.output_dim
-   input_dim = 1024
-   hidden_dims = [512, 256, 128]  
-   output_dim = 6
+
  
    if opt.mode == 0:
        
