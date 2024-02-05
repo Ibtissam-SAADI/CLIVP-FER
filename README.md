@@ -27,11 +27,11 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - 
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
-- Model：    VGG19 ;       Average accuracy：  97.364%  <Br/>
+- Model：    CLIVP-FER ;       Average accuracy：  97.364%  <Br/>
 ###  FER2013 Accurary     ###
-- Model：    VGG19 ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
+- Model：    CLIVP-FER ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
 ###  RAF-DB Accurary     ###
-- Model：    VGG19 ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
+- Model：    CLIVP-FER ;       Accuracy：  99.022% <Br/>
 
 ### plot confusion matrix for all fold ###
 - python plot_CK+_confusion_matrix.py --model VGG19
