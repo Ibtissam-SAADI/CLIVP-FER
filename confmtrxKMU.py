@@ -16,7 +16,7 @@ from models.clip import clip
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import timm
-from KMU2 import KMU
+from preprocess_KMUFED import KMU
 from torchvision import models
 
 from models import *
