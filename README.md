@@ -13,12 +13,10 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 
 ### Preprocessing ###
-- first we add text part for each dataset: <Br/>
--*For KMU-FED dataset*: 'python formatdescription.py' <Br/>
+-*For KMU-FED dataset*: 'python formatdescription.py' then, 'python preprocess_KMUFED.py' <Br/>
 -*For FER2013 dataset*: 'python preprocess_FER2013.py' <Br/>
 -*For RAF-DB dataset*: 'python formatdescription.py' <Br/>
-then put them in the "data" folder, then 
-- python preprocess_KMUFED.py
+then put them in the "data" folder.
 
 ### Train and Test model ###
 - python mainpro_FER.py --model VGG19 --bs 128 --lr 0.01
