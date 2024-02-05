@@ -3,5 +3,5 @@ A CLIP based pytorch implementation on facial expression recognition (KMU-FED, F
 
 This is the **official repository** for the [**paper**](https://arxiv.org/abs/) "*CLIVP-FER:LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION*".
 
-
+# CLIVP-FER Architecture
 ![figures/CLIParch12.png](figures/CLIParch12.png)
