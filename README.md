@@ -35,7 +35,7 @@ Mode 1: Image and text features.
 We use 10-fold Cross validation in the experiment.
 - Model：    CLIVP-FER ;       Average accuracy：  97.364%  <Br/>
 ###  FER2013 Accurary     ###
-- Model：    CLIVP-FER ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
+- Model：    CLIVP-FER ;       PublicTest_acc：  99.081% ;     PrivateTest_acc：99.108%     <Br/>
 ###  RAF-DB Accurary     ###
 - Model：    CLIVP-FER ;       Accuracy：  99.022% <Br/>
 
