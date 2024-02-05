@@ -39,7 +39,7 @@ We use 10-fold Cross validation in the experiment.
 ###  RAF-DB Accurary     ###
 - Model：    CLIVP-FER ;       Accuracy：  99.022% <Br/>
 
-### plot confusion matrix for all fold ###
+### Confusion matrices ###
 - python plot_CK+_confusion_matrix.py --model VGG19
 
 <div style="display: flex; justify-content: flex-start;">
