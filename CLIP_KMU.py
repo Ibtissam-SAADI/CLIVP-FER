@@ -193,10 +193,13 @@ def train(epoch):
         if opt.mode == 1:
             text_features = clip_model.encode_text(captions)
             text_features = text_features / text_features.norm(dim=-1, keepdim=True)  
-            
+            features = torch.cat((image_features, text_features), dim = 1)
         else:
             features = text_features
      
+        pooling_layer = nn.AvgPool1d(kernel_size=2, stride=2) #nn.MaxPool1d(kernel_size=2, stride=2)
+        features = pooling_layer(features)
+        features = features.view(features.size(0), -1)
         features = features.float()
         start_batch_time = time.time()
 
@@ -246,20 +249,21 @@ def test(epoch):
   
         images, captions, labels = images.to(device), captions.to(device), labels.to(device)
    
-        with torch.no_grad():
-             text_features = clip_model.encode_text(captions)
-             text_features /= text_features.norm(dim=-1, keepdim=True)
-       
+       with torch.no_grad():
+             image_features = clip_model.encode_image(images)
+             image_features = image_features.unsqueeze(1)  # Reshape for 1D pooling
+             image_features = avg_pool(image_features).squeeze(1)
              if opt.mode ==1:
                 text_features = clip_model.encode_text(captions)
                 text_features /= text_features.norm(dim=-1, keepdim=True)
- 
+                features = torch.cat((image_features, text_features), dim = 1)
              else:
-                features = text_features
+                features = image_features
 
-     
+             pooling_layer = nn.AvgPool1d(kernel_size=2, stride=2) #nn.MaxPool1d(kernel_size=2, stride=2)
+             features = pooling_layer(features)
+             features = features.view(features.size(0), -1)
              features = features.float()
-             start_batch_time = time.time()
              test_pred = net(features)
         
         loss = criterion(test_pred, labels)
