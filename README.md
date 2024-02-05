@@ -35,5 +35,8 @@ We use 10-fold Cross validation in the experiment.
 
 ### plot confusion matrix for all fold ###
 - python plot_CK+_confusion_matrix.py --model VGG19
-  
-![figures/both.png](figures/both.png) ![figures/FER20132mtrx.png](figures/FER20132mtrx.png) ![figures/RAFmtrx.png](figures/RAFmtrx.png) 
+
+<p align="left">
+<img width=400 src= "figures/both.png"/>
+</p>
+
