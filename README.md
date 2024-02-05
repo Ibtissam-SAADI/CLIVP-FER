@@ -19,14 +19,18 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 then put them in the "data" folder.
 
 ### Train and Test model ###
-- python mainpro_FER.py --model VGG19 --bs 128 --lr 0.01
+Mode 0: Image features only.
+Mode 1: Image and text features.
 
+- *FER2013 dataset*: python CLIP_FER2013.py --model Ourmodel --mode 1 --bs 32 --lr 0.0001
+- *RAF-DB dataset*: python CLIP_RAFDB.py --model Ourmodel --mode 1 --bs 64 --lr 0.0001
 ### Train and Eval model for all 10 fold ###
-- python k_fold_train.py
+- *KMU-FED dataset*: python 10fold_train.py
 
 ### plot confusion matrix ###
-- python plot_fer2013_confusion_matrix.py --model VGG19 --split PrivateTest
-- 
+- python plot_fer2013_confusion_matrix.py --mode 1
+- python plot_fer2013_confusion_matrix.py --mode 1
+- python plot_fer2013_confusion_matrix.py --mode 1
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
 - Model：    CLIVP-FER ;       Average accuracy：  97.364%  <Br/>
@@ -39,9 +43,9 @@ We use 10-fold Cross validation in the experiment.
 - python plot_CK+_confusion_matrix.py --model VGG19
 
 <div style="display: flex; justify-content: flex-start;">
-  <img width=280 src="figures/both.png"/>
-  <img width=280 src="figures/FER20132mtrx.png"/>
-  <img width=280 src="figures/RAFmtrx.png"/>
+  <img width=260 src="figures/both.png"/>
+  <img width=260 src="figures/FER20132mtrx.png"/>
+  <img width=260 src="figures/RAFmtrx.png"/>
 </div>
 
 
