@@ -18,8 +18,7 @@ class KMU(data.Dataset):
         number = len(self.data['labels'])
         sum_number = [0, 196, 316, 516, 725, 905, 1104]
         test_number = [19, 12, 20, 21, 18, 20]
-        # sum_number = [0,196,316,516,725,905,1104] # the sum of class number
-        # test_number = [39,24,40,42,36,40]
+
 
         test_index = []
         train_index = []
