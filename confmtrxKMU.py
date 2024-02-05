@@ -161,7 +161,6 @@ for i in range(10):
              features = pooling_layer(features)
              features = features.view(features.size(0), -1)
              features = features.float()
-             #features = torch.nn.functional.normalize(features)
          
              test_pred = net(features)
 
