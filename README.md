@@ -13,10 +13,10 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 
 ### Preprocessing ###
-- first we add text part for each dataset:
--*For KMU-FED dataset*: 'python formatdescription.py'
--*For FER2013 dataset*: 'python preprocess_FER2013.py'
--*For RAF-DB dataset*: 'python formatdescription.py'
+- first we add text part for each dataset: <Br/>
+-*For KMU-FED dataset*: 'python formatdescription.py' <Br/>
+-*For FER2013 dataset*: 'python preprocess_FER2013.py' <Br/>
+-*For RAF-DB dataset*: 'python formatdescription.py' <Br/>
 then put them in the "data" folder, then 
 - python preprocess_KMUFED.py
 
