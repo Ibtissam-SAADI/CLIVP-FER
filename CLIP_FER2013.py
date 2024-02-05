@@ -11,7 +11,7 @@ import os
 import argparse
 from cbam import CBAM
 import utils
-from FER2013data import FER2013
+from preprocess_FER2013 import FER2013
 from torch.autograd import Variable
 import timm
 from torchvision import models
