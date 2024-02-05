@@ -10,7 +10,7 @@ from torch.autograd import Variable
 import torchvision
 import transforms as transforms
 from sklearn.metrics import confusion_matrix, classification_report
-from FER2013data import FER2013
+from preprocess_FER2013 import FER2013
 from torch.autograd import Variable
 from torchvision import models
 import csv
