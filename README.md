@@ -19,8 +19,8 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 then put them in the "data" folder.
 
 ### Train and Test model ###
-Mode 0: Image features only.
-Mode 1: Image and text features.
+*Mode 0*: Image features only.
+*Mode 1*: Image and text features.
 
 - *FER2013 dataset*: python CLIP_FER2013.py --model Ourmodel --mode 1 --bs 32 --lr 0.0001
 - *RAF-DB dataset*: python CLIP_RAFDB.py --model Ourmodel --mode 1 --bs 64 --lr 0.0001
@@ -40,7 +40,6 @@ We use 10-fold Cross validation in the experiment.
 - Model：    CLIVP-FER ;       Accuracy：  99.022% <Br/>
 
 ### Confusion matrices ###
-- python plot_CK+_confusion_matrix.py --model VGG19
 
 <div style="display: flex; justify-content: flex-start;">
   <img width=260 src="figures/both.png"/>
