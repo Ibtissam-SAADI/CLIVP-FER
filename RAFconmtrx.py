@@ -27,7 +27,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 parser = argparse.ArgumentParser(description='PyTorch CK+ CNN Training')
 parser.add_argument('--model', type=str, default='Ourmodel', help='CNN architecture')
 parser.add_argument('--mode', type=int, default=1, help='CNN architecture')
-parser.add_argument('--dataset', type=str, default='KMU-FED', help='dataset')
+parser.add_argument('--dataset', type=str, default='RAF-DB', help='dataset')
 parser.add_argument('--fold', default=1, type=int, help='k fold number')
 parser.add_argument('--bs', default=64, type=int, help='batch_size')
 parser.add_argument('--lr', default=0.001, type=float, help='learning rate')
