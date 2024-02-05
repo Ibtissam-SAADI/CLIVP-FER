@@ -12,35 +12,27 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - RAF-DB  dataset from http://www.whdeng.cn/RAF/model1.html
 
 
-### Preprocessing Fer2013 ###
-- first download the dataset(fer2013.csv) then put it in the "data" folder, then
-- python preprocess_fer2013.py
+### Preprocessing ###
+- first download the datasets then put them in the "data" folder, then
+- python preprocess_datasetname.py
 
-### Train and Eval model ###
+### Train and Test model ###
 - python mainpro_FER.py --model VGG19 --bs 128 --lr 0.01
-
-### plot confusion matrix ###
-- python plot_fer2013_confusion_matrix.py --model VGG19 --split PrivateTest
-
-###              fer2013 Accurary             ###
-
-- Model：    VGG19 ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
-- Model：   Resnet18 ;     PublicTest_acc：  71.190% ;    PrivateTest_acc：72.973%     
-
-## CK+ Dataset ##
-- The CK+ dataset is an extension of the CK dataset. It contains 327 labeled facial videos,
-We extracted the last three frames from each sequence in the CK+ dataset, which
-contains a total of 981 facial expressions. we use 10-fold Cross validation in the experiment.
-
-### Train and Eval model for a fold ###
-- python mainpro_CK+.py --model VGG19 --bs 128 --lr 0.01 --fold 1
 
 ### Train and Eval model for all 10 fold ###
 - python k_fold_train.py
 
+### plot confusion matrix ###
+- python plot_fer2013_confusion_matrix.py --model VGG19 --split PrivateTest
+- 
+###  KMU-FED Accurary     ###
+We use 10-fold Cross validation in the experiment.
+- Model：    VGG19 ;       Average accuracy：  97.364%  <Br/>
+###  FER2013 Accurary     ###
+- Model：    VGG19 ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
+###  RAF-DB Accurary     ###
+- Model：    VGG19 ;       PublicTest_acc：  71.496% ;     PrivateTest_acc：73.112%     <Br/>
+
 ### plot confusion matrix for all fold ###
 - python plot_CK+_confusion_matrix.py --model VGG19
 
-###      CK+ Accurary      ###
-- Model：    VGG19 ;       Test_acc：   94.646%   <Br/>
-- Model：   Resnet18 ;     Test_acc：   94.040% 
