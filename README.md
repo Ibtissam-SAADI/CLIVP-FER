@@ -13,7 +13,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 
 ### Preprocessing ###
-- first download the datasets then put them in the "data" folder, then
+- first we add text part for each dataset by 'python formatdescription.py', then put them in the "data" folder, 
 - python preprocess_datasetname.py
 
 ### Train and Test model ###
