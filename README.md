@@ -37,9 +37,9 @@ We use 10-fold Cross validation in the experiment.
 - python plot_CK+_confusion_matrix.py --model VGG19
 
 <div style="display: flex; justify-content: flex-start;">
-  <img width=400 src="figures/both.png"/>
-  <img width=400 src="figures/FER20132mtrx.png"/>
-  <img width=400 src="figures/RAFmtrx.png"/>
+  <img width=250 src="figures/both.png"/>
+  <img width=250 src="figures/FER20132mtrx.png"/>
+  <img width=250 src="figures/RAFmtrx.png"/>
 </div>
 
 
