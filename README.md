@@ -28,9 +28,9 @@ Mode 1: Image and text features.
 - *KMU-FED dataset*: python 10fold_train.py
 
 ### plot confusion matrix ###
-- python plot_fer2013_confusion_matrix.py --mode 1
-- python plot_fer2013_confusion_matrix.py --mode 1
-- python plot_fer2013_confusion_matrix.py --mode 1
+- python KMUconfmtrx.py --mode 1
+- python FER2013confmtrx.py --mode 1
+- python RAFconfmtrx.py --mode 1
 ###  KMU-FED Accurary     ###
 We use 10-fold Cross validation in the experiment.
 - Model：    CLIVP-FER ;       Average accuracy：  97.364%  <Br/>
