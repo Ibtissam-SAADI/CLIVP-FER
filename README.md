@@ -6,11 +6,11 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 # CLIVP-FER Architecture
 ![figures/CLIParch12.png](figures/CLIParch12.png)
 
-## FER2013 Dataset ##
-- Dataset from https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
-Image Properties: 48 x 48 pixels (2304 bytes)
-labels: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
-The training set consists of 28,709 examples. The public test set consists of 3,589 examples. The private test set consists of another 3,589 examples.
+## Datasets ##
+- KMU-FED dataset from https://cvpr.kmu.ac.kr/KMU-FED.html
+- FER2013 dataset from https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
+- RAF-DB  dataset from http://www.whdeng.cn/RAF/model1.html
+
 
 ### Preprocessing Fer2013 ###
 - first download the dataset(fer2013.csv) then put it in the "data" folder, then
