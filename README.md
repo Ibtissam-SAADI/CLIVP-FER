@@ -14,7 +14,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 ### Preprocessing ###
 -*For KMU-FED dataset*: 'python formatdescription.py' then, 'python preprocess_KMUFED.py' <Br/>
--*For FER2013 dataset*: 'python preprocess_FER2013.py' <Br/>
+-*For FER2013 dataset*: 'python FER2013data.py' then, 'python preprocess_FER2013.py' <Br/>
 -*For RAF-DB dataset*: 'python formatdescription.py' <Br/>
 then put them in the "data" folder.
 
