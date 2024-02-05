@@ -39,4 +39,10 @@ We use 10-fold Cross validation in the experiment.
 <p align="left">
 <img width=400 src= "figures/both.png"/>
 </p>
+<p align="center">
+<img width=400 src= "figures/FER20132mtrx.png"/>
+</p>
+<p align="right">
+<img width=400 src= "figures/RAFmtrx.png"/>
+</p>
 
