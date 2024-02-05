@@ -13,7 +13,7 @@ import argparse
 import utils
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score,accuracy_score
-from KMU2 import KMU
+from preprocess_KMUFED import KMU
 from torch.autograd import Variable
 from models.clip import clip
 import timm
