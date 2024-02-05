@@ -189,13 +189,11 @@ def train(epoch):
         image_features = image_features.unsqueeze(1)  # Reshape for 1D pooling
         image_features = avg_pool(image_features).squeeze(1)
         optimizer.zero_grad()
-        text_features = clip_model.encode_text(captions)
-        text_features = text_features / text_features.norm(dim=-1, keepdim=True) 
-   
+
         if opt.mode == 1:
             text_features = clip_model.encode_text(captions)
             text_features = text_features / text_features.norm(dim=-1, keepdim=True)  
-         
+            
         else:
             features = text_features
      
