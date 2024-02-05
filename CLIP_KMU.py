@@ -185,7 +185,9 @@ def train(epoch):
     for index, (images, captions, labels) in enumerate(trainloader):
 
         images, captions, labels = images.to(device), captions.to(device), labels.to(device)
-
+        image_features = clip_model.encode_image(images)
+        image_features = image_features.unsqueeze(1)  # Reshape for 1D pooling
+        image_features = avg_pool(image_features).squeeze(1)
         optimizer.zero_grad()
         text_features = clip_model.encode_text(captions)
         text_features = text_features / text_features.norm(dim=-1, keepdim=True) 
