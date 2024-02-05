@@ -2,4 +2,4 @@
 
 This is the **official repository** for the [**paper**](https://arxiv.org/abs/) "*CLIVP-FER:LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION*".
 
-![figures/approach.png](figures/CLIParch.png)
+![figures/CLIParch12.png](figures/CLIParch12.png)
