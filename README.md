@@ -4,7 +4,9 @@ A CLIP based pytorch implementation on facial expression recognition (KMU-FED), 
 This is the **official repository** for the [**paper**](https://arxiv.org/abs/) "*LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION IN DRIVING ENVIRONMENT*".
 
 # CLIVP-FER Architecture
-![figures/CLIParcht.png](figures/CLIParcht.png)
+<div style="display: flex; justify-content: flex-start;">
+  <img width=600 src="figures/CLIParcht.png"/>
+</div>
 
 ## Datasets ##
 - KMU-FED dataset from https://cvpr.kmu.ac.kr/KMU-FED.html
