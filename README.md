@@ -14,7 +14,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 'python preprocess_KMUFED.py' to preprocess the image and text data. <Br/>
 
 ### Train and Test model ###
-*Mode 0*: Image features only.
+*Mode 0*: Image features only.<Br/>
 *Mode 1*: Image and text features.
 
 ### Train and Eval model for all 10 fold ###
