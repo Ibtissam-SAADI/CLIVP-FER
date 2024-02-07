@@ -5,7 +5,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 
 # CLIVP-FER Architecture
 <div style="display: flex; justify-content: flex-start;">
-  <img width=1000 src="figures/CLIParcht.png"/>
+  <img width=800 src="figures/CLIParcht.png"/>
 </div>
 
 ## Datasets ##
