@@ -1,4 +1,4 @@
-# CLIVP-FER:LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION
+# LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION IN DRIVING ENVIRONMENT
 A CLIP based pytorch implementation on facial expression recognition (KMU-FED), achieving an average accuracy of 97.36%  in KMU-FED.
 
 This is the **official repository** for the [**paper**](https://arxiv.org/abs/) "*CLIVP-FER:LEVERAGING VISION LANGUAGE MODELS FOR FACIAL EXPRESSION RECOGNITION*".
