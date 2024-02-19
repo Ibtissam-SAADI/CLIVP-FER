@@ -12,7 +12,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 - KMU-FED dataset from https://cvpr.kmu.ac.kr/KMU-FED.html
 
 ### Preprocessing ###
--*For KMU-FED dataset*: 'python formatdescription.py' to add the text description to the images and save them as CSV format, then, then put them in the "data" folder. <Br/>
+-*For KMU-FED dataset*: 'python formatdescription.py' to add the text description to the images and save them as CSV format, then, put them in the "data" folder. <Br/>
 'python preprocess_KMUFED.py' to preprocess the image and text data. <Br/>
 
 ### Train and Test model ###
