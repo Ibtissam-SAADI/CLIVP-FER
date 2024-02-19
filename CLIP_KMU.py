@@ -22,7 +22,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
-parser = argparse.ArgumentParser(description='PyTorch CK+ CNN Training')
+parser = argparse.ArgumentParser(description='PyTorch MKUFED CLIVP-FER Training')
 parser.add_argument('--model', type=str, default='Ourmodel', help='CNN architecture')
 parser.add_argument('--mode', type=int, default=1, help='CNN architecture')
 parser.add_argument('--dataset', type=str, default='KMU-FED', help='dataset')
