@@ -19,7 +19,7 @@ This is the **official repository** for the [**paper**](https://arxiv.org/abs/) 
 *Mode 0*: Image features only.<Br/>
 *Mode 1*: Image and text features.
 
-### Train and Eval model for all 10 fold ###
+### Train and Test model for all 10 fold ###
 - *KMU-FED dataset*: python 10fold_train.py
 
 ### plot confusion matrix ###
