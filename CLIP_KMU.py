@@ -195,7 +195,7 @@ def train(epoch):
             text_features = text_features / text_features.norm(dim=-1, keepdim=True)  
             features = torch.cat((image_features, text_features), dim = 1)
         else:
-            features = text_features
+            features = image_features
      
         pooling_layer = nn.AvgPool1d(kernel_size=2, stride=2) #nn.MaxPool1d(kernel_size=2, stride=2)
         features = pooling_layer(features)
